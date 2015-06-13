@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="ZipCashLockable" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,90 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aCy-hQ-XsL">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AJL-2j-pmV">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CDm-Z9-rxf">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l5o-Ib-EhY">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                            </switch>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AJL-2j-pmV" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="5px-vV-1Kq"/>
+                            <constraint firstItem="CDm-Z9-rxf" firstAttribute="top" secondItem="AJL-2j-pmV" secondAttribute="bottom" constant="8" id="8LM-Rs-CAv"/>
+                            <constraint firstItem="CDm-Z9-rxf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="9MD-3o-hIC"/>
+                            <constraint firstItem="aCy-hQ-XsL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="SI6-LR-GAI"/>
+                            <constraint firstItem="AJL-2j-pmV" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="W87-Ez-ZYF"/>
+                            <constraint firstItem="l5o-Ib-EhY" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Wbz-4Q-tDn"/>
+                            <constraint firstItem="l5o-Ib-EhY" firstAttribute="top" secondItem="AJL-2j-pmV" secondAttribute="bottom" constant="8" id="WrX-Lo-lVa"/>
+                            <constraint firstItem="aCy-hQ-XsL" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="kq8-Cp-A9k"/>
+                            <constraint firstItem="aCy-hQ-XsL" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="mFg-pN-hti"/>
+                            <constraint firstItem="l5o-Ib-EhY" firstAttribute="leading" secondItem="CDm-Z9-rxf" secondAttribute="trailing" constant="8" id="puf-6i-qXk"/>
+                            <constraint firstItem="AJL-2j-pmV" firstAttribute="top" secondItem="aCy-hQ-XsL" secondAttribute="bottom" constant="8" id="q9H-8d-AUF"/>
+                            <constraint firstItem="CDm-Z9-rxf" firstAttribute="top" secondItem="AJL-2j-pmV" secondAttribute="bottom" constant="8" id="sPy-j3-ipv"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="aCy-hQ-XsL"/>
+                                <exclude reference="AJL-2j-pmV"/>
+                                <exclude reference="CDm-Z9-rxf"/>
+                                <exclude reference="l5o-Ib-EhY"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="SI6-LR-GAI"/>
+                                <exclude reference="kq8-Cp-A9k"/>
+                                <exclude reference="mFg-pN-hti"/>
+                                <exclude reference="5px-vV-1Kq"/>
+                                <exclude reference="W87-Ez-ZYF"/>
+                                <exclude reference="q9H-8d-AUF"/>
+                                <exclude reference="8LM-Rs-CAv"/>
+                                <exclude reference="9MD-3o-hIC"/>
+                                <exclude reference="sPy-j3-ipv"/>
+                                <exclude reference="Wbz-4Q-tDn"/>
+                                <exclude reference="WrX-Lo-lVa"/>
+                                <exclude reference="puf-6i-qXk"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="aCy-hQ-XsL"/>
+                                <include reference="AJL-2j-pmV"/>
+                                <include reference="CDm-Z9-rxf"/>
+                                <include reference="l5o-Ib-EhY"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="SI6-LR-GAI"/>
+                                <include reference="kq8-Cp-A9k"/>
+                                <include reference="mFg-pN-hti"/>
+                                <include reference="5px-vV-1Kq"/>
+                                <include reference="W87-Ez-ZYF"/>
+                                <include reference="q9H-8d-AUF"/>
+                                <include reference="8LM-Rs-CAv"/>
+                                <include reference="9MD-3o-hIC"/>
+                                <include reference="sPy-j3-ipv"/>
+                                <include reference="Wbz-4Q-tDn"/>
+                                <include reference="WrX-Lo-lVa"/>
+                                <include reference="puf-6i-qXk"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="184.5" y="429"/>
         </scene>
     </scenes>
 </document>
