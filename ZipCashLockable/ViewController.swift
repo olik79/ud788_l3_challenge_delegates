@@ -27,6 +27,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func switchToggled(sender: UISwitch) {
+        lockableTextField.enabled = sender.on
+    }
 
 }
 
