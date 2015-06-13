@@ -77,6 +77,7 @@
 		4FC9BFF11B2C9640002A3458 /* ZipCashLockable */ = {
 			isa = PBXGroup;
 			children = (
+				4FC9C0141B2C996D002A3458 /* Delegates */,
 				4FC9BFF41B2C9640002A3458 /* AppDelegate.swift */,
 				4FC9BFF61B2C9640002A3458 /* ViewController.swift */,
 				4FC9BFF81B2C9640002A3458 /* Main.storyboard */,
@@ -110,6 +111,13 @@
 				4FC9C0091B2C9640002A3458 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4FC9C0141B2C996D002A3458 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Delegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -39,7 +40,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="AJL-2j-pmV" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="5px-vV-1Kq"/>
-                            <constraint firstItem="CDm-Z9-rxf" firstAttribute="top" secondItem="AJL-2j-pmV" secondAttribute="bottom" constant="8" id="8LM-Rs-CAv"/>
                             <constraint firstItem="CDm-Z9-rxf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="9MD-3o-hIC"/>
                             <constraint firstItem="aCy-hQ-XsL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="SI6-LR-GAI"/>
                             <constraint firstItem="AJL-2j-pmV" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="W87-Ez-ZYF"/>
@@ -59,15 +59,14 @@
                                 <exclude reference="l5o-Ib-EhY"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="SI6-LR-GAI"/>
-                                <exclude reference="kq8-Cp-A9k"/>
-                                <exclude reference="mFg-pN-hti"/>
                                 <exclude reference="5px-vV-1Kq"/>
                                 <exclude reference="W87-Ez-ZYF"/>
                                 <exclude reference="q9H-8d-AUF"/>
-                                <exclude reference="8LM-Rs-CAv"/>
                                 <exclude reference="9MD-3o-hIC"/>
                                 <exclude reference="sPy-j3-ipv"/>
+                                <exclude reference="SI6-LR-GAI"/>
+                                <exclude reference="kq8-Cp-A9k"/>
+                                <exclude reference="mFg-pN-hti"/>
                                 <exclude reference="Wbz-4Q-tDn"/>
                                 <exclude reference="WrX-Lo-lVa"/>
                                 <exclude reference="puf-6i-qXk"/>
@@ -81,21 +80,26 @@
                                 <include reference="l5o-Ib-EhY"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="SI6-LR-GAI"/>
-                                <include reference="kq8-Cp-A9k"/>
-                                <include reference="mFg-pN-hti"/>
                                 <include reference="5px-vV-1Kq"/>
                                 <include reference="W87-Ez-ZYF"/>
                                 <include reference="q9H-8d-AUF"/>
-                                <include reference="8LM-Rs-CAv"/>
                                 <include reference="9MD-3o-hIC"/>
                                 <include reference="sPy-j3-ipv"/>
+                                <include reference="SI6-LR-GAI"/>
+                                <include reference="kq8-Cp-A9k"/>
+                                <include reference="mFg-pN-hti"/>
                                 <include reference="Wbz-4Q-tDn"/>
                                 <include reference="WrX-Lo-lVa"/>
                                 <include reference="puf-6i-qXk"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="cashTextField" destination="AJL-2j-pmV" id="JDN-vO-XqS"/>
+                        <outlet property="lockToggle" destination="l5o-Ib-EhY" id="Bcs-tT-dJj"/>
+                        <outlet property="lockableTextField" destination="CDm-Z9-rxf" id="KWF-Mj-jp1"/>
+                        <outlet property="zipCodeField" destination="aCy-hQ-XsL" id="j2P-64-yhO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
