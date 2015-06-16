@@ -15,13 +15,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var lockableTextField: UITextField!
     @IBOutlet weak var lockToggle: UISwitch!
     
-    let zipTextViewDelegate = ZipTextViewDelegate()
+    let zipTextFieldDelegate = ZipTextViewDelegate()
+    let cashTextFieldDelegate = DollarTextDelegate()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        self.zipCodeField.delegate = zipTextViewDelegate
+        self.zipCodeField.delegate = zipTextFieldDelegate
+    
+        self.cashTextField.text = "$0.00"
+        self.cashTextField.delegate = cashTextFieldDelegate
     }
 
     override func didReceiveMemoryWarning() {

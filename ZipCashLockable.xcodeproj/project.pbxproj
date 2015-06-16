@@ -14,6 +14,7 @@
 		4FC9BFFF1B2C9640002A3458 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FC9BFFD1B2C9640002A3458 /* LaunchScreen.xib */; };
 		4FC9C00B1B2C9640002A3458 /* ZipCashLockableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC9C00A1B2C9640002A3458 /* ZipCashLockableTests.swift */; };
 		4FCCA8161B2CA84D00113CF3 /* ZipTextViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCCA8151B2CA84D00113CF3 /* ZipTextViewDelegate.swift */; };
+		4FEA07D41B2F282000939933 /* DollarTextDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FEA07D31B2F282000939933 /* DollarTextDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		4FC9C0091B2C9640002A3458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FC9C00A1B2C9640002A3458 /* ZipCashLockableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipCashLockableTests.swift; sourceTree = "<group>"; };
 		4FCCA8151B2CA84D00113CF3 /* ZipTextViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipTextViewDelegate.swift; sourceTree = "<group>"; };
+		4FEA07D31B2F282000939933 /* DollarTextDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DollarTextDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				4FCCA8151B2CA84D00113CF3 /* ZipTextViewDelegate.swift */,
+				4FEA07D31B2F282000939933 /* DollarTextDelegate.swift */,
 			);
 			name = Delegates;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FCCA8161B2CA84D00113CF3 /* ZipTextViewDelegate.swift in Sources */,
+				4FEA07D41B2F282000939933 /* DollarTextDelegate.swift in Sources */,
 				4FC9BFF71B2C9640002A3458 /* ViewController.swift in Sources */,
 				4FC9BFF51B2C9640002A3458 /* AppDelegate.swift in Sources */,
 			);
